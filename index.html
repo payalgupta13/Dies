@@ -29,8 +29,11 @@
         <button class="roll" onclick="roll()">Roll</button>
     </div>
     <script>
-    
-    switch(randomNumber){
+        function roll(){
+            const randomNumber = Math.floor(Math.random()*(7-1)) + 1
+            const imgElement = document.getElementById("img-dice")
+
+            switch(randomNumber){
                 case 1:
                     imgElement.src = "dice (1).png"
                 break
@@ -49,7 +52,7 @@
                 case 6:
                     imgElement.src = "dice (6).png"
                 break
-            
+            }
             
     }
     </script>
